@@ -241,7 +241,7 @@
 			};
 			buildConfigurationList = BE245138266FBEE00038AD81 /* Build configuration list for PBXProject "ios-stations" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = ja;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
