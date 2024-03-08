@@ -22,6 +22,7 @@
 		BE7131462688C07700E3EAB8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7131452688C07600E3EAB8 /* WebKit.framework */; };
 		BE713148268B3CF000E3EAB8 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE713147268B3CF000E3EAB8 /* UIColor+Theme.swift */; };
 		BE71314A268B4CA400E3EAB8 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE713149268B4CA400E3EAB8 /* BookCell.swift */; };
+		FA7DA9D72B9B35E000B32924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA7DA9D92B9B35E000B32924 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BE7131452688C07600E3EAB8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BE713147268B3CF000E3EAB8 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		BE713149268B4CA400E3EAB8 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		FA7DA9D82B9B35E000B32924 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		BE245134266FBEE00038AD81 = {
 			isa = PBXGroup;
 			children = (
+				FA7DA9D92B9B35E000B32924 /* InfoPlist.strings */,
 				BE24513F266FBEE00038AD81 /* ios-stations */,
 				BE245156266FBEE10038AD81 /* ios-stationsTests */,
 				BE245161266FBEE10038AD81 /* ios-stationsUITests */,
@@ -238,7 +241,7 @@
 			};
 			buildConfigurationList = BE245138266FBEE00038AD81 /* Build configuration list for PBXProject "ios-stations" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -266,6 +269,7 @@
 				BE24514D266FBEE10038AD81 /* LaunchScreen.storyboard in Resources */,
 				BE24514A266FBEE10038AD81 /* Assets.xcassets in Resources */,
 				BE245148266FBEE00038AD81 /* Main.storyboard in Resources */,
+				FA7DA9D72B9B35E000B32924 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +359,14 @@
 				BE665EDF26817723006F4F2C /* Base */,
 			);
 			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		FA7DA9D92B9B35E000B32924 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7DA9D82B9B35E000B32924 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
