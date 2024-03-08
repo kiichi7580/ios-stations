@@ -96,7 +96,6 @@
 		BE245134266FBEE00038AD81 = {
 			isa = PBXGroup;
 			children = (
-				FA7DA9D92B9B35E000B32924 /* InfoPlist.strings */,
 				BE24513F266FBEE00038AD81 /* ios-stations */,
 				BE245156266FBEE10038AD81 /* ios-stationsTests */,
 				BE245161266FBEE10038AD81 /* ios-stationsUITests */,
@@ -118,6 +117,7 @@
 		BE24513F266FBEE00038AD81 /* ios-stations */ = {
 			isa = PBXGroup;
 			children = (
+				FA7DA9D92B9B35E000B32924 /* InfoPlist.strings */,
 				617F70BD29C2BD4B00B7AFFE /* testResources */,
 				BE245140266FBEE00038AD81 /* AppDelegate.swift */,
 				BE7131362685ED0F00E3EAB8 /* Book.swift */,
