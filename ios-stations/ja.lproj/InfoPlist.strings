@@ -4,7 +4,6 @@
 
   Created by 中里起一 on 2024/03/08.
   
-  // InfoPlist.strings (ja)
-  CFBundleName = "iOSステーション";
-  CFBundleDisplayName = "iOSステーション";
 */
+
+"CFBundleDisplayName" = "iOSステーション";
