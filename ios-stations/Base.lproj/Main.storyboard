@@ -17,12 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-0n-MYy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0d-91-47T">
                                 <rect key="frame" x="107" y="426" width="200" height="44"/>
+                                <color key="backgroundColor" name="Main"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="HC7-aW-Fl0"/>
-                                    <constraint firstAttribute="height" constant="44" id="abz-Z8-Qbu"/>
+                                    <constraint firstAttribute="height" constant="44" id="np9-5m-oT6"/>
+                                    <constraint firstAttribute="width" constant="200" id="pfN-0u-Bfb"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background">
@@ -31,15 +33,8 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Click">
                                             <attributes>
-                                                <color key="NSBackgroundColor" red="0.75686275960000005" green="0.3686274886" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                <real key="NSKern" value="0.0"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                    <tabStops/>
-                                                </paragraphStyle>
-                                                <color key="NSStrokeColor" red="0.67450982329999998" green="0.67450982329999998" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <real key="NSStrokeWidth" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -48,10 +43,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="F3Y-0n-MYy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="64H-H0-Qvm"/>
-                            <constraint firstItem="F3Y-0n-MYy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X7a-ZS-xvA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ymb-LC-8Zk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nK2-0E-dif"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VxE-xq-hUf"/>
+                            <constraint firstItem="h0d-91-47T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eUg-GX-zCJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mz7-re-Y8i"/>
+                            <constraint firstItem="h0d-91-47T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sd4-zo-8iy"/>
                         </constraints>
                     </view>
                 </viewController>
