@@ -17,26 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2I-D9-KDn">
-                                <rect key="frame" x="157" y="426" width="150" height="44"/>
-                                <color key="backgroundColor" name="Main"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-0f-IUa">
+                                <rect key="frame" x="107" y="426" width="200" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="DpL-1R-j0V"/>
-                                    <constraint firstAttribute="width" constant="110" id="YEt-Tl-Pfn"/>
+                                    <constraint firstAttribute="width" constant="200" id="Sro-Uy-ji5"/>
+                                    <constraint firstAttribute="height" constant="44" id="sAx-Ab-4qJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Main"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Click">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2XL-Mv-lwV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K9g-LQ-DAz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X2I-D9-KDn" secondAttribute="trailing" constant="157" id="NtZ-Pl-gCy"/>
-                            <constraint firstItem="X2I-D9-KDn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nTc-AE-9Oj"/>
-                            <constraint firstItem="X2I-D9-KDn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tqW-Pr-JQT"/>
-                            <constraint firstItem="X2I-D9-KDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="uz8-Qg-K88"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJw-pS-uP7"/>
+                            <constraint firstItem="m5s-0f-IUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XU1-jT-sBo"/>
+                            <constraint firstItem="m5s-0f-IUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adw-Pf-09V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lT2-Ro-xkE"/>
                         </constraints>
                     </view>
                 </viewController>
