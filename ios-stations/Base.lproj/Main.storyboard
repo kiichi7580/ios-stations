@@ -30,6 +30,9 @@
                                 <state key="normal" title="Click">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeBackgroundColor:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0I-yM-PVS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,6 +43,9 @@
                             <constraint firstItem="h0d-91-47T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sd4-zo-8iy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testButton" destination="h0d-91-47T" id="FPg-yF-E32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

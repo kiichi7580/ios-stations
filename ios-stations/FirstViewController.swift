@@ -8,11 +8,16 @@ import UIKit
 class FirstViewController: UIViewController {
 
     var books: [Book]?
+    
+    @IBOutlet weak var testButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func changeBackgroundColor(_ sender: Any, forEvent event: UIButton) {
+        testButton.backgroundColor = UIColor.random
+    }
 }
 
 extension FirstViewController: UITableViewDataSource {
