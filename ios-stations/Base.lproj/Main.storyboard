@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-0f-IUa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-0n-MYy">
                                 <rect key="frame" x="107" y="426" width="200" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Sro-Uy-ji5"/>
-                                    <constraint firstAttribute="height" constant="44" id="sAx-Ab-4qJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="HC7-aW-Fl0"/>
+                                    <constraint firstAttribute="height" constant="44" id="abz-Z8-Qbu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -33,7 +33,7 @@
                                             <attributes>
                                                 <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="18" name="Arial-BoldMT"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -42,10 +42,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJw-pS-uP7"/>
-                            <constraint firstItem="m5s-0f-IUa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XU1-jT-sBo"/>
-                            <constraint firstItem="m5s-0f-IUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adw-Pf-09V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lT2-Ro-xkE"/>
+                            <constraint firstItem="F3Y-0n-MYy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="64H-H0-Qvm"/>
+                            <constraint firstItem="F3Y-0n-MYy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X7a-ZS-xvA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ymb-LC-8Zk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nK2-0E-dif"/>
                         </constraints>
                     </view>
                 </viewController>
