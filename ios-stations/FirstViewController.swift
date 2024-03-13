@@ -9,14 +9,15 @@ class FirstViewController: UIViewController {
 
     var books: [Book]?
     
-    @IBOutlet weak var testButton: UIButton!
+    @IBOutlet weak var testButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func changeBackgroundColor(_ sender: Any, forEvent event: UIButton) {
-        testButton.backgroundColor = UIColor.random
+    @IBAction func presentSecondViewController(_ sender: UIButton) {
+        let nextPage = SecondViewController(url: "")
+        self.present(nextPage, animated: true, completion: nil)
     }
 }
 

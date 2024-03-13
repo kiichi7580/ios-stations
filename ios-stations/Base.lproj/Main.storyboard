@@ -24,14 +24,14 @@
                                     <constraint firstAttribute="height" constant="44" id="np9-5m-oT6"/>
                                     <constraint firstAttribute="width" constant="200" id="pfN-0u-Bfb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Click">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeBackgroundColor:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0I-yM-PVS"/>
+                                    <action selector="presentSecondViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ak3-Kh-dAj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,7 +44,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="testButton" destination="h0d-91-47T" id="FPg-yF-E32"/>
+                        <outlet property="testButton" destination="h0d-91-47T" id="79E-ln-89L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
