@@ -16,7 +16,7 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func presentSecondViewController(_ sender: UIButton) {
-        let nextPage = SecondViewController(url: "")
+        let nextPage = SecondViewController(url: "https://techbowl.co.jp/")
         self.present(nextPage, animated: true, completion: nil)
     }
 }
