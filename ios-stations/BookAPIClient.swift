@@ -11,7 +11,7 @@ protocol BookAPIClientProtocol {
 class BookAPIClient: BookAPIClientProtocol {
 //    func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
 //        completion(nil)
-    let apiUrl = "railway.bookreview.techtrain.dev" // APIのエンドポイントURL
+    let apiUrl = "railway.bookreview.techtrain.dev/public/books?offset=20" // APIのエンドポイントURL
         
     func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
             AF.request(apiUrl, method: .get)
