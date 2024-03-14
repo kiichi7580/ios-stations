@@ -10,7 +10,7 @@ struct Book: Decodable {
     let detail: String
     let review: String
     let reviewer: String
-    let isMine: Bool
+    var isMine: Bool = true
 }
 
 
