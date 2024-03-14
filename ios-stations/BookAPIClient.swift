@@ -13,7 +13,7 @@ class BookAPIClient: BookAPIClientProtocol {
 //        completion(nil)
     let apiUrl = "railway.bookreview.techtrain.dev/public/books?offset=20" // APIのエンドポイントURL
         
-    func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
+    func fetchBooks(offset: Int, completion completionHandler: @escaping ([Book]?) -> Void) {
             AF.request(apiUrl, method: .get)
                 .validate() // オプション。レスポンスの検証が必要な場合に使用
                 .responseJSON { response in
@@ -31,13 +31,13 @@ class BookAPIClient: BookAPIClientProtocol {
                                 }
                                 return Book(id: id, title: title, url: url, detail: detail, review: review, reviewer: reviewer)
                             }
-                            completion(books)
+                            completionHandler(books)
                         } else {
-                            completion(nil) // JSONデータが不正な場合
+                            completionHandler(nil) // JSONデータが不正な場合
                         }
                         
                     case .failure(let error):
-                        completion(nil) // リクエストが失敗した場合
+                        completionHandler(nil) // リクエストが失敗した場合
                         print("Error: \(error)")
                     }
                 }
