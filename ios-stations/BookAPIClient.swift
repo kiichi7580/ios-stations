@@ -11,34 +11,7 @@ protocol BookAPIClientProtocol {
 class BookAPIClient: BookAPIClientProtocol {
 //    func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
 //        completion(nil)
-//        let url = "railway.bookreview.techtrain.dev"
-//        let request = AF.request(url, method: .get)
-//        request.response { response in
-//            
-//            let statusCode = response.response!.statusCode
-//            
-//            do {
-//                if statusCode <= 300 {
-//                    guard let data = response.data else { return }
-//                    
-//                    let value = try JSONDecoder.decode(T.self, from: data)
-//                    completion(value)
-//                }
-//            } catch {
-//                print("変換に失敗しました：", error)
-//                print(response.debugDescription)
-//            }
-//        }
-//        AF.request("railway.bookreview.techtrain.dev")
-//        .responseData { response in
-//            do {
-//                let decoder: JSONDecoder = JSONDecoder()
-//                let books: [Book] = try decoder.decode([Book].self, from: response.data!)
-//                print(books)
-//            } catch {
-//                print(error.localizedDescription)
-//            }
-        let apiUrl = "railway.bookreview.techtrain.dev/public/books" // APIのエンドポイントURL
+    let apiUrl = "railway.bookreview.techtrain.dev" // APIのエンドポイントURL
         
     func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
             AF.request(apiUrl, method: .get)

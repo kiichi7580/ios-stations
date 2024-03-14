@@ -12,6 +12,20 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // BookAPIClientのインスタンスを作成
+        let bookAPIClient = BookAPIClient()
+                
+        // BookAPIClientのfetchBooksメソッドを呼び出し、ViewController自身を渡す
+        bookAPIClient.fetchBooks(offset: 5) { [weak self] fetchedBooks in
+            if let fetchedBooks = fetchedBooks {
+                // データを取得できた場合、ViewControllerのbooksプロパティに保存
+                self?.books = fetchedBooks
+            } else {
+                // データが取得できなかった場合の処理
+                print("Failed to fetch books.")
+            }
+        }
     }
 }
 
