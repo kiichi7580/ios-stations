@@ -11,15 +11,16 @@ protocol BookAPIClientProtocol {
 class BookAPIClient: BookAPIClientProtocol {
 //    func fetchBooks(offset: Int, completion: @escaping ([Book]?) -> Void) {
 //        completion(nil)
-    let apiUrl = "railway.bookreview.techtrain.dev/public/books?offset=20" // APIのエンドポイントURL
         
     func fetchBooks(offset: Int, completion completionHandler: @escaping ([Book]?) -> Void) {
+        let apiUrl = "https://railway.bookreview.techtrain.dev/public/books" // APIのエンドポイントURL
             AF.request(apiUrl, method: .get)
                 .validate() // オプション。レスポンスの検証が必要な場合に使用
                 .responseJSON { response in
                     switch response.result {
                     case .success(let value):
                         if let jsonBooks = value as? [[String: Any]] {
+                            print("value: \(value)")
                             let books = jsonBooks.compactMap { jsonBook -> Book? in
                                 guard let id = jsonBook["id"] as? String,
                                       let title = jsonBook["title"] as? String,
@@ -31,6 +32,7 @@ class BookAPIClient: BookAPIClientProtocol {
                                 }
                                 return Book(id: id, title: title, url: url, detail: detail, review: review, reviewer: reviewer)
                             }
+                            print("books: \(books)")
                             completionHandler(books)
                         } else {
                             completionHandler(nil) // JSONデータが不正な場合
