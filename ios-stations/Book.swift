@@ -10,17 +10,15 @@ struct Book: Decodable {
     let detail: String
     let review: String
     let reviewer: String
-    var isMine: Bool
     
-    init(id: String, title: String, url: String, detail: String, review: String, reviewer: String, isMine: Bool) {
-        self.id = id
-        self.title = title
-        self.url = url
-        self.detail = detail
-        self.review = review
-        self.reviewer = reviewer
-        self.isMine = isMine
-        }
+//    enum CodingKeys: String, CodingKeys {
+//        case id
+//        case title
+//        case url
+//        case detail
+//        case review
+//        case reviewer
+//    }
 }
 
 
