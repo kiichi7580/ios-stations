@@ -60,6 +60,11 @@ extension FirstViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // テーブルビューの行数が0より大きい場合にのみスクロールを行う
+        if tableView.numberOfRows(inSection: 0) > 0 {
+            let indexPath = IndexPath(row: 0, section: 0)
+            tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        }
         return books?.count ?? 0
     }
 }
