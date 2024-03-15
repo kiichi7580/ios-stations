@@ -49,6 +49,11 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="yeH-QC-psV" id="Y6O-9N-8vd"/>
+                                            <outlet property="leadingImage" destination="y7v-Dc-Ood" id="mVO-hd-bl4"/>
+                                            <outlet property="titleLabel" destination="YGL-ZG-SUQ" id="Ejr-Di-WEt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
