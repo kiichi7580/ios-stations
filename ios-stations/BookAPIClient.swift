@@ -32,7 +32,7 @@ class BookAPIClient: BookAPIClientProtocol {
                                 }
                                 return Book(id: id, title: title, url: url, detail: detail, review: review, reviewer: reviewer)
                             }
-                            print("books: \(books)")
+//                            print("books: \(books)")
                             completionHandler(books)
                         } else {
                             completionHandler(nil) // JSONデータが不正な場合
